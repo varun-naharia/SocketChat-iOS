@@ -58,15 +58,17 @@
                         {
                             return;
                         }
-                        NSData *data = [[NSData alloc] initWithData:[output dataUsingEncoding:NSUTF8StringEncoding]];
-                        NSError *error;
-                        NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
-                        if([[output valueForKey:@"type"] isEqualToString:@"usermsg"])
+//                        NSData *data = [[NSData alloc] initWithData:[output dataUsingEncoding:NSASCIIStringEncoding]];
+//                        NSError *error;
+//                        NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
+                        NSData *data = [output dataUsingEncoding:NSUTF8StringEncoding];
+                        id json = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+                        if([[json valueForKey:@"type"] isEqualToString:@"usermsg"])
                         {
-                            if (nil != output) {
+                            if (nil != json) {
                                 
-                                NSLog(@"%@", [dictionary valueForKey:@"message"]);
-                                [self messageReceived:[dictionary valueForKey:@"message"] andSenderID:[dictionary valueForKey:@"name"]];
+                                NSLog(@"%@", [json valueForKey:@"message"]);
+                                [self messageReceived:[json valueForKey:@"message"] andSenderID:[json valueForKey:@"name"]];
                                 
                             }
                         }
@@ -99,7 +101,7 @@
 }
 
 - (void) messageReceived:(NSString *)message andSenderID:(NSString *)senderId {
-    if([[self delegate] respondsToSelector:@selector(messageDidReceived:)])
+    if([[self delegate] respondsToSelector:@selector(messageDidReceived:andSenderId:)])
     {
         [[self delegate] messageDidReceived:message andSenderId:senderId];
     }

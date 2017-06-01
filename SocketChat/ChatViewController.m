@@ -84,9 +84,9 @@
     return cell;
 }
 
--(void)messageDidReceived:(NSString *)message
+-(void)messageDidReceived:(NSString *)message andSenderId:(NSString *)senderId
 {
-    [self.message addObject:[JSQMessage messageWithSenderId:@"sender" displayName:@"sender" text:message]];
+    [self.message addObject:[JSQMessage messageWithSenderId:senderId displayName:senderId text:message]];
     [[super collectionView] reloadData];
 }
 
