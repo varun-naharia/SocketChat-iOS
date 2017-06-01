@@ -22,13 +22,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Domain" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GbD-Td-dfh">
-                                <rect key="frame" x="16" y="227" width="343" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d9k-MO-gpn">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Varun" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d9k-MO-gpn">
                                 <rect key="frame" x="16" y="265" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -44,22 +38,40 @@
                                     <action selector="connectAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FYf-rx-u51"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="9000" borderStyle="roundedRect" placeholder="Port" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JEM-U4-clX">
+                                <rect key="frame" x="16" y="227" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="chating.technaharia.in" borderStyle="roundedRect" placeholder="Domain" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GbD-Td-dfh">
+                                <rect key="frame" x="16" y="189" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="GbD-Td-dfh" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="7Si-RB-05O"/>
-                            <constraint firstItem="d9k-MO-gpn" firstAttribute="trailing" secondItem="Osd-pC-AfQ" secondAttribute="trailing" id="JWA-u7-MzO"/>
-                            <constraint firstItem="GbD-Td-dfh" firstAttribute="trailing" secondItem="d9k-MO-gpn" secondAttribute="trailing" id="L7h-YS-Gmd"/>
-                            <constraint firstItem="d9k-MO-gpn" firstAttribute="top" secondItem="GbD-Td-dfh" secondAttribute="bottom" constant="8" symbolic="YES" id="Vqc-ls-dHc"/>
-                            <constraint firstItem="d9k-MO-gpn" firstAttribute="leading" secondItem="Osd-pC-AfQ" secondAttribute="leading" id="XqF-Bl-XZh"/>
-                            <constraint firstItem="Osd-pC-AfQ" firstAttribute="top" secondItem="d9k-MO-gpn" secondAttribute="bottom" constant="23" id="c3V-G0-CQz"/>
-                            <constraint firstItem="Osd-pC-AfQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cxS-Gs-FKQ"/>
-                            <constraint firstItem="GbD-Td-dfh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="nDX-4F-ZhU"/>
-                            <constraint firstItem="GbD-Td-dfh" firstAttribute="leading" secondItem="d9k-MO-gpn" secondAttribute="leading" id="zbl-YH-zQm"/>
+                            <constraint firstItem="JEM-U4-clX" firstAttribute="trailing" secondItem="d9k-MO-gpn" secondAttribute="trailing" id="1Jb-OZ-r6D"/>
+                            <constraint firstItem="JEM-U4-clX" firstAttribute="top" secondItem="GbD-Td-dfh" secondAttribute="bottom" constant="8" symbolic="YES" id="1fC-aY-LVN"/>
+                            <constraint firstItem="d9k-MO-gpn" firstAttribute="leading" secondItem="Osd-pC-AfQ" secondAttribute="leading" id="2TJ-fo-56B"/>
+                            <constraint firstItem="GbD-Td-dfh" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="I7b-vF-QR9"/>
+                            <constraint firstItem="d9k-MO-gpn" firstAttribute="trailing" secondItem="Osd-pC-AfQ" secondAttribute="trailing" id="Kz9-yz-0p5"/>
+                            <constraint firstItem="GbD-Td-dfh" firstAttribute="trailing" secondItem="JEM-U4-clX" secondAttribute="trailing" id="LfY-ut-aK0"/>
+                            <constraint firstItem="Osd-pC-AfQ" firstAttribute="top" secondItem="d9k-MO-gpn" secondAttribute="bottom" constant="23" id="Pw3-tZ-d31"/>
+                            <constraint firstItem="GbD-Td-dfh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="dwt-uZ-49v"/>
+                            <constraint firstItem="GbD-Td-dfh" firstAttribute="leading" secondItem="JEM-U4-clX" secondAttribute="leading" id="mMs-01-7fr"/>
+                            <constraint firstItem="Osd-pC-AfQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="n0y-8p-4kQ"/>
+                            <constraint firstItem="d9k-MO-gpn" firstAttribute="top" secondItem="JEM-U4-clX" secondAttribute="bottom" constant="8" symbolic="YES" id="u7w-ar-cx7"/>
+                            <constraint firstItem="JEM-U4-clX" firstAttribute="leading" secondItem="d9k-MO-gpn" secondAttribute="leading" id="xhj-jy-tt9"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="EHh-Hn-Mi9"/>
                     <connections>
+                        <outlet property="txtDomain" destination="GbD-Td-dfh" id="u4E-cc-HpP"/>
+                        <outlet property="txtPort" destination="JEM-U4-clX" id="8xH-Kr-XDs"/>
+                        <outlet property="txtUsername" destination="d9k-MO-gpn" id="bD3-yo-DBL"/>
                         <segue destination="gre-d7-ojS" kind="show" id="N6V-di-4gl"/>
                     </connections>
                 </viewController>

@@ -8,7 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import <JSQMessagesViewController/JSQMessages.h>
+#import "WebSocket.h"
+@interface ChatViewController : JSQMessagesViewController<WebSocketDelegate>
 
-@interface ChatViewController : JSQMessagesViewController
+
+@property(nonatomic, strong) NSString *domain;
+@property(nonatomic, strong) NSString *port;
+
+@property(nonatomic, strong)WebSocket *socket;
+
 
 @end

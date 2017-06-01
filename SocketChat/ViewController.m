@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "ChatViewController.h"
-
+#import "WebSocket.h"
 @interface ViewController ()
 
 @end
@@ -26,7 +26,16 @@
 }
 - (IBAction)connectAction:(id)sender {
     
+    WebSocket *socket = [[WebSocket alloc] init];
+    socket.domain = _txtDomain.text;
+    socket.port = _txtPort.text;
+    [socket initNetworkCommunication];
     ChatViewController *chatVc = [[self storyboard] instantiateViewControllerWithIdentifier:@"ChatViewController"];
+    chatVc.socket = socket;
+    chatVc.senderDisplayName = _txtUsername.text;
+    chatVc.senderId = _txtUsername.text;
+    chatVc.domain = _txtDomain.text;
+    chatVc.port = _txtPort.text;
     [[self navigationController] pushViewController:chatVc animated:true];
     
 }

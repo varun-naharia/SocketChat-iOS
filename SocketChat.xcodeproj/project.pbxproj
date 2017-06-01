@@ -18,6 +18,9 @@
 		0796A8FD1D25840200166E9A /* SocketChatUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0796A8FC1D25840200166E9A /* SocketChatUITests.m */; };
 		73F96D2199EDFC2A621CDA7E /* libPods-SocketChatUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3526BC2B29DBEF434BA0C370 /* libPods-SocketChatUITests.a */; };
 		AB9364AC1EDEFB32005DC767 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9364AB1EDEFB32005DC767 /* ChatViewController.m */; };
+		AB9B297E1EDFEC5000469CBD /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB9B297D1EDFEC5000469CBD /* CFNetwork.framework */; };
+		AB9B29801EDFEC5500469CBD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB9B297F1EDFEC5500469CBD /* Security.framework */; };
+		AB9B29831EE0095200469CBD /* WebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9B29821EE0095200469CBD /* WebSocket.m */; };
 		F6E449440359090ED88CCF4E /* libPods-SocketChatTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CB00FA029996C693C0E6B7E /* libPods-SocketChatTests.a */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +67,10 @@
 		7F03481841D7BF71445C8100 /* Pods-SocketChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocketChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocketChat/Pods-SocketChat.debug.xcconfig"; sourceTree = "<group>"; };
 		AB9364AA1EDEFB32005DC767 /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
 		AB9364AB1EDEFB32005DC767 /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
+		AB9B297D1EDFEC5000469CBD /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		AB9B297F1EDFEC5500469CBD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		AB9B29811EE0095200469CBD /* WebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebSocket.h; path = WebSocket/WebSocket.h; sourceTree = "<group>"; };
+		AB9B29821EE0095200469CBD /* WebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebSocket.m; path = WebSocket/WebSocket.m; sourceTree = "<group>"; };
 		CD5EDECB38551CC064DF7100 /* Pods-SocketChatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocketChatUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocketChatUITests/Pods-SocketChatUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FBA9EBDC8A1BB52F3100EB2C /* Pods-SocketChatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocketChatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocketChatTests/Pods-SocketChatTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +80,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB9B29801EDFEC5500469CBD /* Security.framework in Frameworks */,
+				AB9B297E1EDFEC5000469CBD /* CFNetwork.framework in Frameworks */,
 				05E2A291727F34B7BC5FCA55 /* libPods-SocketChat.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -127,6 +136,8 @@
 				0796A8DE1D25840200166E9A /* ViewController.m */,
 				AB9364AA1EDEFB32005DC767 /* ChatViewController.h */,
 				AB9364AB1EDEFB32005DC767 /* ChatViewController.m */,
+				AB9B29811EE0095200469CBD /* WebSocket.h */,
+				AB9B29821EE0095200469CBD /* WebSocket.m */,
 				0796A8E01D25840200166E9A /* Main.storyboard */,
 				0796A8E31D25840200166E9A /* Assets.xcassets */,
 				0796A8E51D25840200166E9A /* LaunchScreen.storyboard */,
@@ -165,6 +176,8 @@
 		88A90ED5A3CB11680875EB57 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AB9B297F1EDFEC5500469CBD /* Security.framework */,
+				AB9B297D1EDFEC5000469CBD /* CFNetwork.framework */,
 				0F1B2B6FCBB21EB92CD54941 /* libPods-SocketChat.a */,
 				0CB00FA029996C693C0E6B7E /* libPods-SocketChatTests.a */,
 				3526BC2B29DBEF434BA0C370 /* libPods-SocketChatUITests.a */,
@@ -463,6 +476,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0796A8DF1D25840200166E9A /* ViewController.m in Sources */,
+				AB9B29831EE0095200469CBD /* WebSocket.m in Sources */,
 				0796A8DC1D25840200166E9A /* AppDelegate.m in Sources */,
 				AB9364AC1EDEFB32005DC767 /* ChatViewController.m in Sources */,
 				0796A8D91D25840200166E9A /* main.m in Sources */,
@@ -609,6 +623,29 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SocketChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"JSQMessagesViewController\"",
+					"-l\"JSQSystemSoundPlayer\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"MapKit\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"UIKit\"",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = in.techwizard.SocketChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -621,6 +658,29 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SocketChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"JSQMessagesViewController\"",
+					"-l\"JSQSystemSoundPlayer\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"MapKit\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"UIKit\"",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = in.techwizard.SocketChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
