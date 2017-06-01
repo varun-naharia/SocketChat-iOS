@@ -76,6 +76,11 @@
     return [_message count];
 }
 
+-(void)didPressAccessoryButton:(UIButton *)sender
+{
+    NSLog(@"camera");
+}
+
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     JSQMessagesCollectionViewCell *cell = [super collectionView:collectionView cellForItemAtIndexPath:indexPath];
